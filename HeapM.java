@@ -70,7 +70,6 @@ public class HeapM<T extends Comparable<T>> {
         while (index > 1){
             int parent = index / 2;
             if (compare(S[index], S[parent]) >= 0)
-                //break if the parent is greater or equal to the current element
                 break;
             swap(index,parent);
             index = parent;
